@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>非诚勿扰</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<style type="text/css">
+    #img4{
+        position:relative;
+        left:300px;
+        opacity:0;
+    }
+</style>
+</head>
+<body>
+	<div id="banner">
+    	<div class="wrap">
+        	<dl>
+            	<dt></dt>
+                <dd></dd>
+                <p></p>
+                <div id="bn_btn">
+                	<a href="#" class="ios"></a>
+                    <a href="#" class="android"></a>
+                </div>
+            </dl>
+        </div>
+    </div>
+    <div id="weibo" class="wrap">
+    	<div id="wb_text" class="left"></div>
+        <div id="wb_btn" class="right"></div>
+        <div id="wb_line"></div>
+    </div>
+    <div id="content" class="wrap">
+    	<div id="img1" class="left"></div>
+        <dl class="right">
+        	<dt></dt>
+            <dd> 注册账号简单快捷，只需要输入用户名，密码，性别，点击提交，即可完成注册。注册后自动获得一个数字账号，这个用账号登陆</dd>
+        </dl>
+        <div class="clear"></div>
+        <dl class="left d2">
+        	<dt></dt>
+            <dd> 注册账号简单快捷，只需要输入用户名，密码，性别，点击提交，即可完成注册。注册后自动获得一个数字账号，这个用账号登陆</dd>
+        </dl>
+        <div id="img2" class="right"></div>
+        <div id="img3" class="left"></div>
+        <dl class="right d3">
+        	<dt></dt>
+            <dd> 注册账号简单快捷，只需要输入用户名，密码，性别，点击提交，即可完成注册。注册后自动获得一个数字账号，这个用账号登陆</dd>
+        </dl>
+        <div class="clear"></div>
+        <dl class="left d4">
+        	<dt></dt>
+            <dd> 注册账号简单快捷，只需要输入用户名，密码，性别，点击提交，即可完成注册。注册后自动获得一个数字账号，这个用账号登陆</dd>
+        </dl>
+        <div id="img4" class="right"></div>
+    </div>
+    <div id="footer" style='clear: both;'></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            console.log($('body').scrollTop());
+
+        console.log($('#img4').offset().top);
+        if(($('#img4').offset().top) < ($('body').scrollTop()+200)){
+            $('#img4').animate({
+                left:'0',
+                opacity:1
+            }, 500);
+        }
+    })
+    </script>
+</body>
+</html>
